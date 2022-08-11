@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clock-wrapper {
+  background-color: #7b7be8;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 400px;
+  height: 400px;
+}
+
+.clock-container {
+  border-radius: 5px;
+  height: 60vh;
+  margin-left: 50px;
+}
+
+.clock {
+  background-color: #f2f2f2;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 30px;
+  border-radius: 5px;
+}
+
+.one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 120px;
+}
+
+.one .span1 {
+  margin-left: 10px;
+}
+
+.one .span2 {
+  margin-left: 250px;
+}
+
+.two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: -150px;
+}
+
+.arrow {
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 65px;
+  width: 3px;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.hour {
+  width: 4px;
+  -webkit-transform: translate(-50%, -100%) rotate(0deg);
+          transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.minute {
+  -webkit-transform: translate(-50%, -100%) rotate(0deg);
+          transform: translate(-50%, -100%) rotate(0deg);
+  height: 100px;
+}
+
+.second {
+  width: 2px;
+  -webkit-transform: translate(-50%, -100%) rotate(0deg);
+          transform: translate(-50%, -100%) rotate(0deg);
+  height: 100px;
+  background-color: #212188;
+}
+
+.digital {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+/*# sourceMappingURL=main.css.map */
